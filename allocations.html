@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Allocations - Hostel Allocation System</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+
+<header>
+    <h1>Your Allocations</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="allocations-section">
+    <h2>Your Allocations</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Hostel Name</th>
+                <th>Room Number</th>
+                <th>Status</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hostel A</td>
+                <td>101</td>
+                <td data-status="Allocated">Allocated</td>
+                <td>2023-09-01</td>
+                <td>2024-09-01</td>
+            </tr>
+            <tr>
+                <td>Hostel B</td>
+                <td>202</td>
+                <td data-status="Pending">Pending</td>
+                <td>2024-01-15</td>
+                <td>2025-01-15</td>
+            </tr>
+            <tr>
+                <td>Hostel C</td>
+                <td>303</td>
+                <td data-status="Rejected">Rejected</td>
+                <td>N/A</td>
+                <td>N/A</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<footer>
+    <p>&copy; 2024 Hostel Allocation System</p>
+</footer>
+
+<script src="script.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>

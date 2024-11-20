@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Hostel Allocation System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Login</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="allocations.html">View Allocations</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="form-container">
+    <h2>Access Your Account</h2>
+    <form id="loginForm" onsubmit="return validateForm('loginForm')" action="login.php" method="POST">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" id="loginPassword" name="password" placeholder="Password" oninput="checkPasswordStrength('loginPassword', 'loginStrength')" required>
+        <p id="loginStrength">Password strength: Weak</p>
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
